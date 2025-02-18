@@ -22,3 +22,32 @@ Open Ports:
 NMAP Scans
 nmap -p- 10.10.134.92 -Pn -T5 -v
 nmap -p 80,8080,22 10.10.134.92 -Pn –v
+
+
+
+Gobuster Command
+For directory busting using gobuster, you can run the following command:
+
+gobuster dir -u http://targetwebsite.com -w /path/to/wordlist.txt
+dir: Tells gobuster you're scanning for directories.
+
+-u: The target URL (replace with the actual website you're testing).
+
+-w: The path to the wordlist you're using (replace with your own path).
+
+DirBuster (GUI)
+
+If you're using DirBuster (the GUI tool), follow these steps:
+
+Open DirBuster GUI.
+Enter the target URL you want to scan.
+Select your wordlist.
+Click "Start" to begin the scan.
+Let me know if you need further assistance!
+
+
+
+
+
+
+
