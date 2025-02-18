@@ -11,3 +11,14 @@ Make sure you wait a full 5 minutes after you start the machine before scanning 
 **What is the user flag?**
 
 **What is the root flag?**
+Recon / Enumeration / Port Scan
+Null Scan Command: nmap –sN 10.10.161.182
+Description: Sends TCP packets with no flags to test for open ports.
+Open Ports:
+-	22 / SSH
+-	80 / HTTP
+-	8080 HTTP-PROXY (Interesting)
+ 
+NMAP Scans
+nmap -p- 10.10.134.92 -Pn -T5 -v
+nmap -p 80,8080,22 10.10.134.92 -Pn –v
